@@ -1,0 +1,19 @@
+@font-face {
+    font-family: 'DejaVu Sans';
+    src: url('../fonts/dejavu/dejavu-sans-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/dejavu/dejavu-sans-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/dejavu/dejavu-sans-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/dejavu/dejavu-sans-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/dejavu/dejavu-sans-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/dejavu/dejavu-sans-webfont.svg#dejavu_sansregular') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+    font-family: 'BPG WEB 002';
+    src: url('../fonts/web-fonts/bpg-web-002-webfont.eot'); /* IE9 Compat Modes */
+    src: url('../fonts/web-fonts/bpg-web-002-webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+         url('../fonts/web-fonts/bpg-web-002-webfont.woff2') format('woff2'), /* Super Modern Browsers */
+         url('../fonts/web-fonts/bpg-web-002-webfont.woff') format('woff'), /* Pretty Modern Browsers */
+         url('../fonts/web-fonts/bpg-web-002-webfont.ttf') format('truetype'), /* Safari, Android, iOS */
+         url('../fonts/web-fonts/bpg-web-002-webfont.svg#bpg_web_002regular') format('svg'); /* Legacy iOS */
+}
