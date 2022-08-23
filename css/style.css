@@ -441,6 +441,7 @@
 .contact-wrapper {
     display: flex;
     justify-content: space-around;
+    align-items: center;
 }
 
 
@@ -522,3 +523,5 @@
     font-family: var(--poppins);
     color: #1c1e21;
 }
+/* end contact section */
+/* footer */
