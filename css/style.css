@@ -52,15 +52,19 @@
 .nav-a {
     font-family: var(--web-fonts);
     color: var(--silver);
+    transition: 0.3s;
 }
-.dropdown::after{
+
+.dropdown::after {
     content: ' \25BE';
     display: inline-block;
     font-size: 19px;
 }
+
 .nav-a:hover {
-    opacity: 70%;
-    border-bottom: 2px solid var(--silver);
+    /* opacity: 70%; */
+    /* border-bottom: 2px solid #00FF00; */
+    color: #33ff00;
 
 }
 
@@ -123,7 +127,7 @@
 
 .sl__price {
     margin-top: 10px;
-    color: rgb(56, 226, 56);
+    color: #33ff00;
 }
 
 .slick-prev:before,
@@ -266,7 +270,7 @@
     font-family: var(--web-fonts);
     font-size: 16px;
     text-align: center;
-    color: var(--silver);
+    color: rgb(79, 47, 4);
     font-weight: 800;
 }
 
@@ -378,20 +382,24 @@
     background: linear-gradient(45deg, rgba(10, 37, 60, 1) 0%, rgba(212, 229, 243, 1) 100%);
     /* padding: 100px 0; */
 }
+
 .mack-bg {
     max-width: 409px;
     width: 100%;
 }
-.mack-bg img{
+
+.mack-bg img {
     width: 100%;
     display: block;
 }
+
 .mack-item-wrapper {
     margin-top: 89px !important;
     max-width: 1170px;
     width: 100%;
     margin: 0 auto;
 }
+
 .mac-item {
     max-width: 360px;
     width: 100%;
@@ -406,4 +414,111 @@
     cursor: pointer;
     padding: 0 10px;
 
+}
+
+/* end mac section */
+/* contact section */
+.contact {
+    margin-top: 80px;
+}
+
+.contact-bg {
+    background-image: url(../img/1-Contact-JOPELI1-1.jpg);
+    width: 100%;
+    height: 370px;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+.contact-title {
+    font-family: var(--web-fonts);
+    font-size: 50px;
+    line-height: 80px;
+    text-align: center;
+    margin: 80px 0 50px;
+}
+
+.contact-wrapper {
+    display: flex;
+    justify-content: space-around;
+}
+
+
+.form-wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.textarea-form {
+    max-width: 360px;
+    width: 100%;
+    height: 198px;
+    background: #e8e8e8;
+    resize: none;
+    padding: 20px;
+    margin-bottom: 16px;
+    border: 2px solid #e8e8e8;
+}
+
+.cont-forms {
+    max-width: 360px;
+    width: 100%;
+    height: 49px;
+    margin-bottom: 16px;
+    padding: 20px;
+    background: #e8e8e8;
+    border: 2px solid #e8e8e8;
+}
+
+.input-coll {
+    max-width: 360px;
+    width: 100%;
+
+}
+
+.contact-desc {
+    margin-top: 20px;
+    max-width: 590px;
+    display: flex;
+    justify-content: space-between;
+}
+
+.contact-mob {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.cont-btn {
+    max-width: 252px;
+    width: 100%;
+    height: 49px;
+    background: rgb(12, 18, 41);
+    color: #fff;
+}
+
+.cont-icon {
+    margin-bottom: 10px;
+    font-size: 40px;
+    color: #1c1e21;
+}
+.map{
+    width: 590px;
+    height: 320px;
+}
+.google-map{
+    width: 100%;
+    height: 100%;
+}
+.contact-mob a {
+    color: #1c1e21;
+}
+.contact-mob p {
+    font-size: 16px;
+    font-weight: bold;
+    font-family: var(--poppins);
+    color: #1c1e21;
 }
