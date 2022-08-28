@@ -13,6 +13,11 @@
         font-size: 12px;
         font-weight: 400;
     }
+    .footer-soc-title{
+        font-size: 12px;
+        font-weight: 400;
+        margin-top: 20px;
+    }
 }
 @media(max-width: 1200px){
     .footer-left{
@@ -217,14 +222,10 @@
     .section-title h2{
         font-size: 20px;
         line-height: 25px;
-        text-align: justify;
     }
 }
 @media(max-width: 370px){
     .contact-bg {
         height: 117px;
     }
-}
-@media (max-width:768px) {
-   
 }
