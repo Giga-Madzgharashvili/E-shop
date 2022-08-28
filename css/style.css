@@ -22,8 +22,14 @@ body {
     left: 20px;
     width: 40px;
     height: 30px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     padding: 2px 2px 2px 3px;
     cursor: pointer;
@@ -34,10 +40,16 @@ body {
     width: 100%;
     height: 3px;
     background-color: var(--silver);
+    -webkit-transition: -webkit-transform 0.2s ease-out;
+    transition: -webkit-transform 0.2s ease-out;
+    -o-transition: transform 0.2s ease-out;
     transition: transform 0.2s ease-out;
+    transition: transform 0.2s ease-out, -webkit-transform 0.2s ease-out;
 }
 
 .list-active .line1 {
+    -webkit-transform: scale(0.9) rotate(-45deg) translate(-6px, 4px);
+    -ms-transform: scale(0.9) rotate(-45deg) translate(-6px, 4px);
     transform: scale(0.9) rotate(-45deg) translate(-6px, 4px);
 }
 
@@ -46,6 +58,8 @@ body {
 }
 
 .list-active .line3 {
+    -webkit-transform: scale(0.9) rotate(45deg) translate(-6px, -4px);
+    -ms-transform: scale(0.9) rotate(45deg) translate(-6px, -4px);
     transform: scale(0.9) rotate(45deg) translate(-6px, -4px);
 }
 
@@ -71,8 +85,14 @@ body {
 }
 
 .header-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
 }
@@ -83,13 +103,19 @@ body {
 }
 
 .nav-ul {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: space-evenly;
+    -ms-flex-pack: space-evenly;
     justify-content: space-evenly;
 }
 
 .nav-a {
     font-family: var(--web-fonts);
     color: var(--silver);
+    -webkit-transition: 0.3s;
+    -o-transition: 0.3s;
     transition: 0.3s;
 }
 
@@ -108,7 +134,11 @@ body {
 .top-ul {
     max-width: 100px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -137,6 +167,7 @@ body {
 .sl__img {
     width: 100%;
     height: 100%;
+    -o-object-fit: scale-down;
     object-fit: scale-down;
 
 }
@@ -194,6 +225,7 @@ body {
 .iphone-sec-bg {
     width: 100%;
     background: rgb(255, 72, 88);
+    background: -o-linear-gradient(45deg, rgba(255, 72, 88, 1) 0%, rgba(143, 101, 255, 1) 100%);
     background: linear-gradient(45deg, rgba(255, 72, 88, 1) 0%, rgba(143, 101, 255, 1) 100%);
 }
 
@@ -208,8 +240,13 @@ body {
 }
 
 .section-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 }
 
@@ -253,9 +290,16 @@ body {
 }
 
 .iphone-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
 }
@@ -264,10 +308,20 @@ body {
     max-width: 270px;
     width: 100%;
     height: 349px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-shadow: 0px 2px 15px #aaa;
     box-shadow: 0px 2px 15px #aaa;
     border-radius: 10px;
     cursor: pointer;
@@ -293,12 +347,16 @@ body {
     max-height: 100%;
     display: block;
     margin: 0 auto;
+    -webkit-transition: .7s;
+    -o-transition: .7s;
     transition: .7s;
 
 
 }
 
 .item-image img:hover {
+    -webkit-transform: scale(1.2);
+    -ms-transform: scale(1.2);
     transform: scale(1.2);
 }
 
@@ -330,6 +388,8 @@ body {
     font-family: var(--dejavu);
     font-size: 18px;
     margin: 0 auto;
+    -webkit-transition: 1s;
+    -o-transition: 1s;
     transition: 1s;
 }
 
@@ -347,6 +407,7 @@ body {
 .ipad-sec-bg {
     width: 100%;
     background: rgb(66, 59, 158);
+    background: -o-linear-gradient(45deg, rgba(66, 59, 158, 1) 0%, rgba(174, 172, 193, 1) 100%);
     background: linear-gradient(45deg, rgba(66, 59, 158, 1) 0%, rgba(174, 172, 193, 1) 100%);
 
 }
@@ -370,9 +431,16 @@ body {
 }
 
 .ipad-item {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-wrap: wrap;
     flex-wrap: wrap;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
 }
@@ -381,11 +449,21 @@ body {
     max-width: 420px;
     width: 100%;
     height: 400px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     padding-top: 10px;
+    -webkit-box-shadow: 0px 2px 10px #aaa;
     box-shadow: 0px 2px 10px #aaa;
     border-radius: 10px;
     cursor: pointer;
@@ -408,10 +486,14 @@ body {
     max-height: 100%;
     display: block;
     margin: 0 auto;
+    -webkit-transition: .7s;
+    -o-transition: .7s;
     transition: .7s;
 }
 
 .ipad-product-image img:hover {
+    -webkit-transform: scale(1.1);
+    -ms-transform: scale(1.1);
     transform: scale(1.1);
 }
 
@@ -429,6 +511,7 @@ body {
 .mack-sec-bg {
     width: 100%;
     background: rgb(10, 37, 60);
+    background: -o-linear-gradient(45deg, rgba(10, 37, 60, 1) 0%, rgba(212, 229, 243, 1) 100%);
     background: linear-gradient(45deg, rgba(10, 37, 60, 1) 0%, rgba(212, 229, 243, 1) 100%);
 }
 
@@ -453,10 +536,20 @@ body {
     max-width: 360px;
     width: 100%;
     height: 349px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
+    -webkit-box-shadow: 0px 2px 15px #aaa;
     box-shadow: 0px 2px 15px #aaa;
     border-radius: 10px;
     cursor: pointer;
@@ -493,17 +586,31 @@ body {
 }
 
 .contact-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
 
 }
 
 
 .form-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -537,14 +644,27 @@ body {
 .contact-desc {
     margin-bottom: 20px;
     max-width: 590px;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .contact-mob {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
 }
 
@@ -566,8 +686,15 @@ body {
 .map-wrapper {
     max-width: 590px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -603,7 +730,10 @@ body {
 }
 
 .footer-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     padding-bottom: 20px;
 }
@@ -611,14 +741,27 @@ body {
 .footer-left {
     max-width: 850px;
     width: 100%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
 .footer-nav-wrapper {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+    -ms-flex-direction: column;
     flex-direction: column;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: start;
+    -ms-flex-pack: start;
     justify-content: flex-start;
 }
 
@@ -635,7 +778,11 @@ body {
 }
 
 .soc-networks {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
@@ -643,8 +790,14 @@ body {
     width: 50px;
     height: 50px;
     border-radius: 50%;
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+    -ms-flex-align: center;
     align-items: center;
+    -webkit-box-pack: center;
+    -ms-flex-pack: center;
     justify-content: center;
     background: #000;
 }
@@ -672,12 +825,14 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
 }
+
 .footer-soc-title {
     font-family: var(--dejavu);
     color: #4267B2;
     font-size: 17px;
     margin-bottom: 20px;
 }
+
 .foot-li:not(:last-child) {
     margin-bottom: 15px;
 }
@@ -689,7 +844,11 @@ body {
 }
 
 .foot-ul li {
+    display: -webkit-box;
+    display: -ms-flexbox;
     display: flex;
+    -webkit-box-pack: justify;
+    -ms-flex-pack: justify;
     justify-content: space-between;
 }
 
