@@ -293,7 +293,7 @@ body {
     max-height: 100%;
     display: block;
     margin: 0 auto;
-    transition: 2s;
+    transition: .7s;
 
 
 }
@@ -408,7 +408,7 @@ body {
     max-height: 100%;
     display: block;
     margin: 0 auto;
-    transition: 2s;
+    transition: .7s;
 }
 
 .ipad-product-image img:hover {
@@ -671,7 +671,12 @@ body {
     font-weight: bold;
     margin-bottom: 20px;
 }
-
+.footer-soc-title {
+    font-family: var(--dejavu);
+    color: #4267B2;
+    font-size: 17px;
+    margin-bottom: 20px;
+}
 .foot-li:not(:last-child) {
     margin-bottom: 15px;
 }
